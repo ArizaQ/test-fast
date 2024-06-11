@@ -12,4 +12,4 @@ RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 #
 RUN pip install --upgrade pip
 RUN pip install fastapi
-CMD ["bash", "-c", "python -m uvicorn src.app.main:app --host 0.0.0.0 --port 8080"]
+CMD ["bash", "-c", "python -m uvicorn src.app.main:app --host 0.0.0.0 --port 5000"]
